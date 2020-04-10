@@ -1,0 +1,77 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "\t\t\n\n task 1 \n\n";// just to separate between tasks
+	
+	int z, t;
+	int num; 
+	float f;//to make a decimal number unacceptable I am planning to change it into boolean variable but 
+	cout << "Hi Dear, this task will show you the division of two numbers that you are going to enter" << endl;
+	cout << "Please enter your numbers" << endl;
+	cin >> z >> t;
+	if (z / t == num)
+		cout << "It is divisible" << endl;
+	else if (z / t == f)//i am not sure if I can do this when the variable is integer and i am asking it if it is float, but I am asking about the answer
+		cout << "It is not divisible";
+	else
+		cout << "It is not divisible";
+	cout << "\t\t\n\n End of task 1\n\n";
+	
+	cout << "\t\t\n\n task 2  \n\n";
+	char x, y, Y;
+	cout << "Please enter a character" << endl;
+	cin >> x;
+	if (x == y && x == Y)// if the user entered y or Y anyway you are enrolled will be displayed
+		cout << "You are enrolled" << endl;
+	else
+		cout << "You are not enrolled";// the opposite
+
+	cout << "\t\t\n\n End of task 2\n\n";
+
+	cout << "\t\t\n\n task 3 \n\n";
+	double a, e, c;// they are meant to be decimal numbers because what ever the user entered it will not be a problem 
+	cout << "Hi Dear, Can you please input 3 numbers:" << endl;
+	
+	if (a < e && a < c)// if a less then e and c, the number which is entered in the variable a will be displayed
+		cout <<"The minimum number is:"<< a;
+	else if (e < a && e < c)// the opposite 
+		cout << "The minimum number is:" << e;
+	else        
+		cout << "The minimum number is:" << c;//if neither e or a less than those two numbers then c will be the smaller number
+
+	cout << "\t\t\n\n End of task 3\n\n";
+	// I am going to put this in a new item because there are two variable under the same name which is y in task 2 as well
+
+/*	cout << "\t\t\n\n task 4  \n\n";
+
+	char i,r,R,g,G,y,Y,b,B,p,P;
+	cout << " Hi darling, please input the first initial letter of the color from the list below" << endl;
+	cout << "1-Red" << endl << "2-Green" << endl << "3-Yellow" << endl << "Blue" << endl << "Pink" << endl;
+	cin >> i;
+	switch (i)
+	{
+		case r || R:
+			cout << "The color you picked is Red\n";
+			break;
+		case g || G:
+			cout << "The color you picked is Green\n";
+			break;
+		case y||Y:
+			cout << "The color you picked is Yellow\n";//I have used y in task 2 which is giving me error and I have to use y in both would you recommend to do another project or just changing the color is enough 
+			break;
+		case b || B:
+			cout << "The color you picked is Blue\n";
+			break;
+		case p|| P:	
+			cout << "The color you picked is pink\n"; 
+			break;
+		default:
+			cout << "Oops, Sorry probably your character does not match any of the initial first letter in the list above"<< endl;
+	}
+	cout << "\t\t\n\n End of task 4\n\n";*/
+	system("pause");
+	return 0;
+}
