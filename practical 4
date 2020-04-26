@@ -1,0 +1,109 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	/*cout << "\t\t\t\t Task 1 \n\n\n";
+
+	int m = 0, n=0;// m is the number which will be multiplied and n is the answer of the multiplication
+
+	cout << "Please enter a number and it will show you the first 5 multiple of it: ";
+	cin >> m;
+	for (int i = 1; i <= 5; i++)// i is to repeat the loop as it is less or equal to 5
+	{
+		n = m * i;// show us the multiplication of m by i, the number that the user entered multiplied by the number of i which starts by 1 and end by 5
+		cout << m << "*" << i << "=" << n << endl;
+	}
+	cout << "\n\n\n\t\t\t  End of Task 1 \n\n\n";
+
+	cout << "\t\t\t\t Task 2 \n\n\n";// do it using while loop
+
+	float v = 0;// v is the number that the user is going to enter 
+	
+	cout << "Please enter a number and it will show it substracted by 0.25, Please do not choose the number more than 4: ";
+
+	for(;;)//  if the user entered a wrong number it will show again and it will ask him again for the number
+	{
+		cin >> v;
+		if (v <= 4 && v > 0)// the number must be between 4 and 0
+		{
+			while (v > 0 && v <= 4)
+			{
+
+				cout << v - 0.25 << endl;
+				v -= 0.25;
+			}
+			break;// to stop the execution when the while loop is done
+		}
+		
+		else
+			cout << "Sorry, your number is out of the list we have, can you choose a number between 0 and 4.";// to ask the user for another number because it was not between 4 and 0
+	}
+	cout << "\n\n\n\t\t\t  End of Task 2 \n\n\n";
+	
+	cout << "\t\t\t\t Task 3 \n\n\n";// do task 2 using do ... while
+
+	//I will not introduce v again which is going to be the same.
+	cout << "Please enter a number and it will show it substracted by 0.25, Please do not choose the number more than 4: ";
+
+	for (;;)
+	{
+		cin >> v;
+		if (v <= 4 && v > 0)// the number must be between 4 and 0
+		{
+			do
+			{
+
+				cout << v - 0.25 << endl;
+				v -= 0.25;
+			} while (v > 0 && v <= 4);
+			break;// to stop the execution when the while loop is done
+		}
+
+		else
+			cout << "Sorry, your number is out of the list we have, can you choose a number between 0 and 4.";
+
+	}
+	cout << "\n\n\n\t\t\t  End of Task 3 \n\n\n";
+
+
+	cout << "\t\t\t\t Task 4 \n\n\n";
+ 
+	for (int y = 100; y >= 0; y--)
+		cout << y << "\t";// y =100 and it will stop on 0
+
+	cout << "\n\n\n\t\t\t  End of Task 4 \n\n\n";*/
+
+
+	cout << "\t\t\t\t Task 5 \n\n\n";
+
+	int e = 0, r = 0, col = e * r;// those are the 2 numbers that will be displayed
+	cout << "Please Enter a number: ";
+	cin >> r;
+
+	for (int e = 1;  e==r ; e++)
+	{
+		for (int r = 1; r == e; r++)
+		{
+			cout << col << "\t";
+		}
+
+		cout << endl;
+
+	}
+	/*
+	for (int row = 1; row <= 5; row++)
+	{
+		for (int col = 1; col <= 5; col++)
+		{
+			cout << "row " << row << ", col " << col;
+			cout << "\t";
+		}
+		cout << endl;
+	}*/
+	cout << "\n\n\n\t\t\t  End of Task 5 \n\n\n";
+
+	system("pause");
+	return 0;
+}
