@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	/*cout << "\t\t\t\t Task 1 \n\n\n";
+	cout << "\t\t\t\t Task 1 \n\n\n";
 
 	int m = 0, n=0;// m is the number which will be multiplied and n is the answer of the multiplication
 
@@ -16,8 +16,14 @@ int main()
 		cout << m << "*" << i << "=" << n << endl;
 	}
 	cout << "\n\n\n\t\t\t  End of Task 1 \n\n\n";
+	
+	system("pause");
+
+	system("CLS");
+
 
 	cout << "\t\t\t\t Task 2 \n\n\n";// do it using while loop
+	
 
 	float v = 0;// v is the number that the user is going to enter 
 	
@@ -41,8 +47,14 @@ int main()
 			cout << "Sorry, your number is out of the list we have, can you choose a number between 0 and 4.";// to ask the user for another number because it was not between 4 and 0
 	}
 	cout << "\n\n\n\t\t\t  End of Task 2 \n\n\n";
-	
+
+	system("pause");
+
+	system("CLS");
+
+
 	cout << "\t\t\t\t Task 3 \n\n\n";// do task 2 using do ... while
+
 
 	//I will not introduce v again which is going to be the same.
 	cout << "Please enter a number and it will show it substracted by 0.25, Please do not choose the number more than 4: ";
@@ -66,42 +78,66 @@ int main()
 
 	}
 	cout << "\n\n\n\t\t\t  End of Task 3 \n\n\n";
+	
+	int t = 4;
+	cout << "Please enter number 4 to go to task 4";
+	cin >> t;
+	while (t = 4)
+	{
+		if (t = 4)
+			break;
+		else
+		{
+			cout << "Sorry you have chosen a wrong number, please enter number 4 again.";
+			cin >> t;
+		}
+	}
+	
+	system("pause");
 
+	system("CLS");
 
-	cout << "\t\t\t\t Task 4 \n\n\n";
+		cout << "\t\t\t\t Task 4 \n\n\n";
  
 	for (int y = 100; y >= 0; y--)
 		cout << y << "\t";// y =100 and it will stop on 0
 
-	cout << "\n\n\n\t\t\t  End of Task 4 \n\n\n";*/
+	cout << "\n\n\n\t\t\t  End of Task 4 \n\n\n";
 
+	system("pause");
+
+	system("CLS");
 
 	cout << "\t\t\t\t Task 5 \n\n\n";
 
-	int e = 0, r = 0, col = e * r;// those are the 2 numbers that will be displayed
-	cout << "Please Enter a number: ";
+
+	int r = 0;// this is the number that will be displayed
+	cout << "Please Enter a number less than 10: ";
 	cin >> r;
-
-	for (int e = 1;  e==r ; e++)
+	
+	while(r>=0 && r<10)\
 	{
-		for (int r = 1; r == e; r++)
+		if (r >= 0 && r < 10)
 		{
-			cout << col << "\t";
+			for (int row = 1; row <= r; row++)
+			{
+				for (int col = 1; col <= r; col++)
+				{
+					cout << row * col;
+					cout << col << "\t";
+				}
+
+				cout << endl;
+
+			}
+			break;
 		}
-
-		cout << endl;
-
+		else
+		{
+			cout << "sorry the number must be between 0 and 10, please try again: ";
+			cin >> r;
+		}
 	}
-	/*
-	for (int row = 1; row <= 5; row++)
-	{
-		for (int col = 1; col <= 5; col++)
-		{
-			cout << "row " << row << ", col " << col;
-			cout << "\t";
-		}
-		cout << endl;
-	}*/
 	cout << "\n\n\n\t\t\t  End of Task 5 \n\n\n";
 
 	system("pause");
